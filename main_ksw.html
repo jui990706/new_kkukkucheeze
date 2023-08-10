@@ -53,9 +53,9 @@
         <div class="container">
             <div class="banner">
                 <div class="bxslider">
-                    <div><img src="images/pexels-mi-texnologiya-17686105.jpg" alt="사진1"></div>
-                    <div><img src="images/logo.png" alt="사진2"></div>
-                    <div><img src="images/logout.png" alt="사진3"></div>
+                    <div><img src="images/배너1.jpg" alt="사진1"></div>
+                    <div><img src="images/배너2.jpg" alt="사진2"></div>
+                    <div><img src="images/배너3.png" alt="사진3"></div>
                 </div>
             </div>
         </div>
@@ -148,10 +148,12 @@
                 mode: 'fade',
                 captions: true,
                 slideWidth: 1440,
-                // minSlides: 3,
-                // maxSlides: 3,
-                // slideWidth: 480,
-                // slideMargin: 10,
+                auto: true, // 자동으로 애니메이션 시작
+                autoControls: true, // 시작 및 중지버튼 표시
+                speed: 1000, // 애니메이션 전환 속도 설정(1000 = 1000ms = 1s = 1초)
+                pause: 3000, // 애니메이션 유지 시간(3000 = 3000ms = 3s = 1초)
+                // // 이전(<) 또는 다음(>) 버튼을 누르면 슬라이드가 정지되게 함
+                stopAutoOnClick: true,
             });
         });
     </script>

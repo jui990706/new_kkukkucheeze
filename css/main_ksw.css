@@ -33,7 +33,7 @@ body{
 }
 #banner{
     margin-top: 150px;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
 }
 #contents{
     height: 500px;
@@ -178,7 +178,8 @@ body{
 .menu_list li a{}
 
 /* banner */
-.bxslider{
+.bxslider > div{
+    background-color: #FFF3E1;
 }
 .bxslider img{
     height: 700px;
