@@ -24,9 +24,9 @@ a{
     clear: both;
     display: block;
     content: "";
-}
+}   
 body{
-    background-color: #FFF3E1;
+    background-color: #FFF8ED;
 }
 #header{
     /* background-color: lightblue; */
@@ -72,7 +72,7 @@ body{
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #FFF3E1;
+    background-color: #FFF8ED;
     transition: all 0.5s;
     z-index: 99998;
 }
@@ -109,7 +109,7 @@ body{
 .menu{
     width: 340px;
     height: 100vh;
-    background-color: #FFE6C7;
+    background-color: #FFF3E1;
     position: fixed;
     right: -340px;
     top: 0;
@@ -139,11 +139,11 @@ body{
     text-align: center;
     height: 80px;
     line-height: 80px;
-    background-color: #F1C3A4;
+    background-color: #f9bf98;
     position: relative;
 }
 .menu_list li:hover{
-    background-color: #f8b385;
+    background-color: #e7b08b;
 }
 .menu_list li::after{
     content: "";
@@ -181,9 +181,34 @@ body{
 .bxslider > div{
     background-color: #FFF3E1;
 }
-.bxslider img{
+.bxslider > div > img{
     height: 700px;
+    position: relative;
 }
+.bxslider span{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 100%;
+    font-size: 50px;
+    color: #fff;
+}
+.bxslider span > img{
+    float: left;
+    height: 50px;
+    margin-top: 20px;
+    margin-right: 20px;
+    animation: flower linear infinite 3s;
+}
+.bxslider .bx-pager-item{
+    
+}
+@keyframes flower{
+    0%{transform: rotate(0deg);}
+    50%{transform: rotate(180deg);}
+    100%{transform: rotate(360deg);}
+}
+
 /* contents */
 
 
