@@ -1,0 +1,241 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'UhBeeSe_hyun';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSe_hyun.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'UhBeeSe_hyun';
+    cursor: none;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.clearfix::after, .clearfix::before{
+    clear: both;
+    display: block;
+    content: "";
+}
+body{
+    background-color: #FFF3E1;
+}
+#header{
+    /* background-color: lightblue; */
+}
+#banner{
+    margin-top: 150px;
+    background-color: lightcoral;
+}
+#contents{
+    height: 500px;
+    background-color: lightblue;
+}
+#footer{
+    background-color: #E5E0D6;
+}
+.container{
+    margin: 0 auto;
+    width: 1440px;
+    height: inherit;
+    /* background-color: rgba(255, 255, 255, 0.3); */
+}
+
+/* cursor */
+.cursor{
+    width: 50px;
+    height: 50px;
+    background: url(../images/menu_hover1.png) no-repeat center center;
+    background-size: cover;
+    user-select: none;
+    pointer-events: none;
+    position: fixed;
+    left: -40px;
+    top: -40px;
+    z-index: 999999;
+}
+
+
+/* header */
+.header{
+    position: fixed;
+    width: 1440px;
+    height: 150px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFF3E1;
+    transition: all 0.5s;
+    z-index: 99998;
+}
+.header.on{
+    height: 100px;
+}
+.header.on .logo img{
+    margin-top: 7px;
+}
+.header.on .menu_bar{
+    margin-top: 35px;
+}
+.logo img{
+    margin-top: 32px;
+    float: left;
+    width: 200px;
+    margin-bottom: 32px;
+    transition: all 0.5s;
+}
+.menu_bar{
+    float: right;
+    margin-top: 68px;
+    margin-right: 30px;
+    transition: all 0.5s;
+}
+.menu_bar img{
+    width: 20px;
+}
+.menu_bar span{
+    font-family: 'UhBeeSe_hyun';
+    font-size: 18px;
+    margin-right: 50px;
+}
+.menu{
+    width: 340px;
+    height: 100vh;
+    background-color: #FFE6C7;
+    position: fixed;
+    right: -340px;
+    top: 0;
+    /* display: none; */
+    border-radius: 50px 0 0 50px;
+    transition: all 0.5s;
+    z-index: 99999;
+}
+.menu.on{
+    right: 0px;
+}
+.menu_title{
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    line-height: 106px;
+    cursor: pointer;
+}
+.menu a i{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    font-size: 30px;
+}
+.menu_list{}
+.menu_list li{
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    background-color: #F1C3A4;
+    position: relative;
+}
+.menu_list li:hover{
+    background-color: #f8b385;
+}
+.menu_list li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -40%;
+    width: 50px;
+    height: 50px;
+    background: url(../images/menu_hover1.png) no-repeat center center;
+    background-size: cover;
+    display: none;
+    /* transition: all 0.4s; */
+}
+.menu_list li::before{
+    content: "";
+    position: absolute;
+    right: 10%;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 44px;
+    height: 44px;
+    background: url(../images/menu_hover2.png) no-repeat center center;
+    background-size: cover;
+    display: none;
+    /* transition: all 0.4s; */
+}
+.menu_list li:hover::after,
+.menu_list li:hover::before{
+    display: block;
+}
+
+.menu_list li a{}
+
+/* banner */
+.bxslider{
+}
+.bxslider img{
+    height: 700px;
+}
+/* contents */
+
+
+/* footer */
+.footer{
+    height: 160px;
+}
+.footer .f_logo{
+    margin-right: 5rem;
+}
+.footer img{
+    height: 80px;
+    margin-top: 50px;
+}
+.footer div{
+    float: left;
+    color: #545454;
+    font-size: 0.75rem;
+}
+.footer .f_menu{
+    margin-top: 10px;
+    width: 80%;
+}
+.footer .f_menu a{
+    color: #545454;
+    display: inline-block;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    padding: 0 30px;
+}
+.footer .f_made{
+    width: 80%;
+}
+.footer .f_made p{
+    display: inline;
+    padding: 0 20px;
+}
+.footer .f_made p:first-child{
+    margin-left: 10px;
+}
+.footer .f_sns{
+    float: right;
+}
+.footer .f_copy{
+    margin-top: 20px;
+    padding-left: 30px;
+}
+.footer i{
+    font-size: 30px;
+    margin-right: 32px;
+    color: #1E2F4F;
+}
+.footer i:last-child{
+    margin-right: 0;
+}
