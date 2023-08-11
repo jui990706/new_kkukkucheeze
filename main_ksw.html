@@ -16,6 +16,7 @@
 
 <body>
     <div class="cursor"></div>
+
     <header id="header">
         <div class="container">
             <div class="header clearfix">
@@ -27,8 +28,11 @@
                 <nav class="nav">
                     <div class="menu_bar">
                         <a href="#" class="login">
-                            <img src="./images/login.png" alt="로그인 이미지">
-                            <span>Login</span>
+                            <!-- <img src="./images/login.png" alt="로그인 이미지"> -->
+                            <span>로그인</span>
+                        </a>
+                        <a href="#" class="logout">
+                            <span>회원가입</span>
                         </a>
                         <a href="#" class="menu_btn">
                             <img src="./images/menu_bar.png" alt="메뉴바">
@@ -40,7 +44,7 @@
         <div class="menu">
             <span class="menu_title">KKU KKU CHEEZE</span>
             <ul class="menu_list">
-                <li><a href="#">회사소개</a></li>
+                <li><a href="#">소개</a></li>
                 <li><a href="#">찾아오시는길</a></li>
                 <li><a href="#">자주묻는질문</a></li>
             </ul>
@@ -55,13 +59,33 @@
                 <div class="bxslider">
                     <div>
                         <img src="images/배너1.jpg" alt="사진1">
-                        <span>
+                        <span class="banner1">
                             <img src="./images/flower.png" alt="꽃 아이콘">
-                            안녕? 난 성우야
+                            인절미들
+                            <img src="./images/flower.png" alt="꽃 아이콘">
                         </span>
                     </div>
-                    <div><img src="images/배너2.jpg" alt="사진2"></div>
-                    <div><img src="images/배너3.png" alt="사진3"></div>
+                    <div>
+                        <img src="images/배너2.png" alt="사진2">
+                        <span class="banner2">
+                            <img src="./images/cat_foot.png" alt="고양이발바닥">
+                            떼껄룩
+                        </span>
+                    </div>
+                    <div>
+                        <img src="./images/배너3.png" alt="사진3">
+                        <span class="banner3">
+                            <img src="./images/book.png" alt="책 사진">
+                            거북이를 이길 수 있는 101가지
+                        </span>
+                    </div>
+                    <div>
+                        <img src="images/배너4.png" alt="사진4">
+                        <span class="banner4">
+                            <img src="./images/bone.png" alt="뼈사진">
+                            군침이 싹 도노
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -106,7 +130,7 @@
     <script>
 
         // Login
-        $(".login").click(function (e) {
+        $(".menu_bar > a").click(function (e) {
             e.preventDefault();
             alert("개발중입니다!");
         });
@@ -155,7 +179,7 @@
                 captions: true,
                 slideWidth: 1440,
                 auto: true, // 자동으로 애니메이션 시작
-                autoControls: false, // 시작 및 중지버튼 표시
+                autoControls: true, // 시작 및 중지버튼 표시
                 speed: 1000, // 애니메이션 전환 속도 설정(1000 = 1000ms = 1s = 1초)
                 pause: 3000, // 애니메이션 유지 시간(3000 = 3000ms = 3s = 1초)
                 // // 이전(<) 또는 다음(>) 버튼을 누르면 슬라이드가 정지되게 함

@@ -121,6 +121,9 @@ body{
 .menu.on{
     right: 0px;
 }
+.menu_btn img{
+    width: 30px;
+}
 .menu_title{
     display: block;
     text-align: center;
@@ -175,32 +178,85 @@ body{
     display: block;
 }
 
-.menu_list li a{}
+.menu_list li a{
+    font-size: 18px;
+}
 
 /* banner */
+.bx-wrapper{
+    border-radius: 20px;
+}
 .bxslider > div{
     background-color: #FFF3E1;
 }
 .bxslider > div > img{
     height: 700px;
     position: relative;
+    border-radius: 20px;
+
 }
-.bxslider span{
+.bxslider span img{
+    width: 50px;
+}
+.bxslider span.banner1,
+.bxslider span.banner4{
     position: absolute;
     bottom: 50px;
     left: 50px;
-    width: 100%;
+    width: 340px;
     font-size: 50px;
     color: #fff;
 }
-.bxslider span > img{
+.bxslider span.banner1 img{
     float: left;
     height: 50px;
     margin-top: 20px;
     margin-right: 20px;
     animation: flower linear infinite 3s;
 }
-.bxslider .bx-pager-item{
+.bxslider span.banner1 img:last-child{
+    float: right;
+}
+.bxslider span.banner2{
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    width: 280px;
+    font-size: 50px;
+    color: #fff;
+}
+.bxslider span.banner2 img{
+    float: left;
+    width: 40px;
+    margin-right: 10px;
+    margin-top: -15px;
+    transform: rotate(-30deg);
+}
+.bxslider span.banner3{
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 400px;
+    font-size: 50px;
+    color: #fff;
+}
+.bxslider span.banner3 img{
+    float: left;
+    width: 40px;
+    margin-right: 30px;
+    margin-top: -15px;
+    transform: rotate(-30deg);
+}
+
+
+.bxslider span.banner4{
+    width: 380px;
+}
+.bxslider span.banner4 img{
+    float: right;
+    transform: rotate(90deg);
+    width: 60px;
+    margin-top: -10px;
     
 }
 @keyframes flower{
